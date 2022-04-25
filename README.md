@@ -24,7 +24,7 @@ Make sure you have selected your desired browser before to run
 ![alt text](https://i.ibb.co/XXD60sP/Cypress-Runner.png)
 
 
-If you face errors like this: Module not found: Error: Can't resolve 'cypress-xpath' in ....
+If you face errors like this: Module not found: Error: Can't resolve 'cypress-xpath' in ....  
 You need to be sure you are in the base project folder (AutomationCypressUI) and run 'npm install' again (make sure not to have errors or fix them according the printed help)
 >npm install
 
