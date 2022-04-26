@@ -20,17 +20,16 @@ describe('Select items from a Dropdown List', () => {
     })
 
     it('Select "Option 1"', () => {
-        cy.get(OPTION_DROPDOWNLIST).select(OPTIONS[1])
+        selectOption(OPTIONS[1])
     })
 
     it('Select "Option 2" and validate the VALUE of the selected option', () => {
-        //selectOption('Option 2')
         selectOption(OPTIONS[2])
         cy.get(OPTION_DROPDOWNLIST).should('have.value', '2')
     })
 
     it('Select "Option 1" and validate the TEXT of the selected option', () => {
-        selectOption('Option 1')
+        selectOption(OPTIONS[1])
         cy.get(SELECTED_OPTION).should('have.text', 'Option 1')
     })
 
