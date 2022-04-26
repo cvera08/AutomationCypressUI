@@ -5,7 +5,7 @@ describe('Checkbox Click', () => {
     const CHECKBOXES = '#checkboxes>input';
 
     beforeEach(() => {
-        cy.visit('https://the-internet.herokuapp.com/checkboxes')
+        cy.visit('/checkboxes')
     })
 
     it('check checkbox 1', () => {

@@ -6,7 +6,7 @@ describe('Button Click', () => {
   const DELETE_BUTTON = '#elements button';
 
   beforeEach(() => {
-      cy.visit('https://the-internet.herokuapp.com/add_remove_elements/')
+      cy.visit('/add_remove_elements/')
   })
 
   it('displays "Add Element" button by default', () => {

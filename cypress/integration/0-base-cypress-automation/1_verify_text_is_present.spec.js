@@ -8,7 +8,7 @@ describe('Text Management', () => {
   const AVAILABLE_PARTIAL_TEXT = 'Available Examp'
 
   beforeEach(() => {
-      cy.visit('https://the-internet.herokuapp.com/')
+      cy.visit('/')
   })
 
   it('Welcome to the-internet - Title is displayed by default', () => {
