@@ -5,14 +5,13 @@ describe('Drag and Drop boxes', () => {
     const COLUMN_A_DIV = '#column-a';
     const COLUMN_B_DIV = '#column-b';
 
-    beforeEach(() => {
-        //cy.visit('/drag_and_drop') //If we put this here, each test (it) will reload the page and the previous drag and drop state will be lost (not desired for the example)
+    before(() => { //not beforeEach. If we chage it to beforeEach, each single test('it') will reload the page and the previous drag and drop state will be lost (not desired for the example)
+        cy.visit('/drag_and_drop') //load the page a single time and just for the first test (initialization)
     })
 
     context('Move A to B', () => {
 
         it('Drag A to B', () => {
-            cy.visit('/drag_and_drop') //load the page just in the first test
             const dataTransfer = new DataTransfer();
             drag_from(COLUMN_A_DIV, dataTransfer)
             drag_to(COLUMN_B_DIV, dataTransfer)
