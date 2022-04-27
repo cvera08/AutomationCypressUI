@@ -30,6 +30,14 @@ You need to be sure you are in the base project folder (AutomationUICypress) and
 
 If it still not works, please restart all the programs, even your computer and start over again
 
+# Run Sanity suite in headless mode (with video output to see the recording):
+```sh
+cd </your/project/path>/AutomationUICypress
+npx cypress run --spec cypress/integration/0-base-cypress-automation/*.spec.js
+```
+You will get something like this
+![alt text](https://i.ibb.co/3TS7gdz/Automation-UICypress-zsh-202-52.png)
+
 # Install Cypress via npm:
 ```sh
 cd </your/project/path>/AutomationUICypress
