@@ -9,12 +9,12 @@ cd </your/desired/project/path/>
 ```
 
 ```sh
-git clone https://github.com/cvera08/AutomationUICypress.git
+git clone https://github.com/cvera08/AutomationUICypressJavaScript.git
 ```
 
 *you can copy all the commands from here with a single click in the copy icon that will be displayed when you do mouse over the console sections*
 ```sh
-cd AutomationUICypress
+cd AutomationUICypressJavaScript
 npm install
 npx cypress open
 ```
@@ -25,14 +25,14 @@ Make sure you have selected your desired browser before to run
 
 
 If you face errors like this: Module not found: Error: Can't resolve 'cypress-xpath' in ....  
-You need to be sure you are in the base project folder (AutomationUICypress) and run 'npm install' again (make sure not to have errors or fix them according the printed help)
+You need to be sure you are in the base project folder (AutomationUICypressJavaScript) and run 'npm install' again (make sure not to have errors or fix them according the printed help)
 >npm install
 
 If it still not works, please restart all the programs, even your computer and start over again
 
 # Run Sanity suite in headless mode (with video output to see the recording):
 ```sh
-cd </your/project/path>/AutomationUICypress
+cd </your/project/path>/AutomationUICypressJavaScript
 npx cypress run --spec cypress/integration/0-base-cypress-automation/*.spec.js
 ```
 You will get something like this
@@ -40,7 +40,7 @@ You will get something like this
 
 # Install Cypress via npm:
 ```sh
-cd </your/project/path>/AutomationUICypress
+cd </your/project/path>/AutomationUICypressJavaScript
 ```
 
 Make sure that you have already run npm init or have a node_modules folder or package.json file in the root of your project to ensure cypress is installed in the correct directory.
@@ -54,7 +54,7 @@ npm install -D cypress-xpath
 # Open Cypress
 make sure you are in your project path before running the following commands
 ```sh
-cd </your/project/path/>AutomationUICypress
+cd </your/project/path/>AutomationUICypressJavaScript
 
 ./node_modules/.bin/cypress open
 ```
